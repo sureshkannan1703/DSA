@@ -1,0 +1,62 @@
+Space Complexity
+ Comment
+Space complexity is the max space(worst case) that is utilised at any point in time during running the algorithm.
+We also determine Space Complexity using Big O.
+Consider the following example:
+
+func(int N) { // 4 bytes
+    int x; // 4 bytes
+    int y; // 4 bytes
+    long z; // 8 bytes
+}
+We only consider the space utilised by our program and not the Input Space since it is not in our control, hence we'll ignore space taken by "int N".
+The above code takes total 16B of memory.
+Hence, we say the Space Complexity of the above code is O(1) (1 resembles constant).
+Question
+Find the Space Complexity [Big(O)] of the below program.
+
+func(int N) { // 4 bytes
+    int arr[10]; // 40 Bytes
+    int x; // 4 bytes
+    int y; // 4 bytes
+    long z; // 8 bytes
+    int[] arr = new int[N]; // 4 * N bytes
+}
+Choices
+
+N
+4N + 60
+Constant
+N^2
+Question
+Find the Space Complexity [Big(O)] of the below program.
+
+func(int N) { // 4 bytes
+    int x = N; // 4 bytes
+    int y = x * x; // 4 bytes
+    long z = x + y; // 8 bytes
+    int[] arr = new int[N]; // 4 * N bytes
+    long[][] l = new long[N][N]; // 8 * N * N bytes
+}
+Choices
+
+N
+4N + 60
+Constant
+N^2
+Question on Space Complexity
+Find the Space Complexity [Big(O)] of the below program.
+
+int maxArr(int arr[], int N) {
+    int ans = arr[0];
+    for(i from 1 to N-1) {
+        ans = max(ans, arr[i]);
+    }
+    return ans;
+}
+Space complexity: O(1)
+Don't consider the space acquired by the input size. Space complexity is the order of extra space used by the algorithm.
+arr[] is already given to us, we didn't create it, hence it'll not be counted in the Space Complexity.
+int N will also not be counted in space but since it is contant hence doesn't matter.
+Additional space is also called computational or auxiliary space.
+The above code finds the max element of the Array.
