@@ -26,8 +26,14 @@
                Element at index (i) contribution in an array arr[];
                Frequency =>  (i+1)*(n-i); (No of time presence of element across all subarrays)
                => arr[i] * frequency;
+         * All Odd/Even length subarray sum => O(N)
+                 Refer : 1588. Sum of All Odd Length Subarrays(Leetcode)
+                 5 8 9 8 5 total times each index was added => k = (i + 1) * (n - i)
+                 3 4 5 4 3 total times in odd length array with =>(k + 1) / 2
+                 2 4 4 4 2 total times in even length array with => k / 2s
       Sliding window Approach :
          * Subarray with fixed size(k). 
-         * Possible total num of subarray => (N-K+1)
+         * Possible total num of subarray size of K in a array of length N => (N-K+1)
+         * Min swap required to group related elements like (Numbers <= B)
    6. Majority element present in a array : (Boyer Moore Algorithm)
       
