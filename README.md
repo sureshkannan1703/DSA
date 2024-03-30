@@ -18,7 +18,7 @@
        * Each subarray sum
        * Even/Odd length subarray sum
        * Sub Array sum with target value.(>= target, <= tagret)
-    5.Sub Arrays-2:
+   5.Sub Arrays-2:
       Contribution Technique: 
          * When calculating sum of all kind of approaches.(Sum of all sub arrays)
          * Contribution of each element value is total sum.
@@ -35,5 +35,18 @@
          * Subarray with fixed size(k). 
          * Possible total num of subarray size of K in a array of length N => (N-K+1)
          * Min swap required to group related elements like (Numbers <= B)
-   6. Majority element present in a array : (Boyer Moore Algorithm)
-      
+      Kadan's Algorithm :
+         * Max Sub array sum :
+               Nested 3 loops O(N^3); Prefix sum approach -> O(N^2) : O(N); Carry forward -> O(N^2) : O(1);
+               Kadan's Algorithm : O(N) : O(1);
+                  Iterate on Array Update max variable, if sum goes <0 make sum = 0;
+   6. Majority element present in a array : (Boyer_Moore Algorithm)
+   7. Prefix max/Suffix Max Calculation :
+         * Water trapped on each building top:
+             Left tall building from current building - prefix max.
+             Right tall building from current building - suffix max.
+             height level = min(leftmax,rightmax);
+             water level = heightlevel - building height;
+
+   8. Zero querries + Psum Combination :
+         * Fill querry val at start index, after end index put neagative value of the value.(to avoid it in psum calc after its end index).
