@@ -1,4 +1,4 @@
-# DSA
+# DSA Handwritten notes:
 
 1. Arrays :
 ===========   
@@ -63,12 +63,17 @@
    3. Prefix sum calculation on 2d matrix/Range querry problem on 2d matrices :
       * Input 2D array => Row wise psum => Column wise calculation.
       * Neglect unnecessary psum cell values from overall psum array while calculating psum for particular range.
-   4. Contribution technique on 2d array matrix :
+   4. Search in row wise column wise sorted 2d matrix;
+         Iterate on first row from last cell;
+         if(cellvalue==targetvalue) return target value;
+         if(cellvalue < targetvalue) -> Move to next row;
+         else if((cellvalue > targetvalue) -> Iterate over the current row;
+   5. Contribution technique on 2d array matrix :
       * Sum of all submatrices sum :
         Contribution of (i,j) cell value across all submatrices TL*BR => (i+1)(n-i)(j+1)(m-j)
         i-row; j-col; n-total rows; m - total columns;
         (i+1)(n-i) -> represents how many TL submatrix contains the (i,j).
         (j+1)(m-i) -> represents how many BR submatrix contains the (i,j).
-         so,
+         So,
         iterate on all cells => sum = sum + (TL) * (BR) * matrix[i][j];
         
