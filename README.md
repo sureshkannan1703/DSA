@@ -47,6 +47,14 @@
              Right tall building from current building - suffix max.
              height level = min(leftmax,rightmax);
              water level = heightlevel - building height;
-
    8. Zero querries + Psum Combination :
          * Fill querry val at start index, after end index put neagative value of the value.(to avoid it in psum calc after its end index).
+   9. Subsequences :
+         * Elements to be arranged in increasing index order.
+         * Possible subsequnces count for an array of size n => 2^n;
+         * We can generate all subsequences/sum via bitwise operation approach;  T:C=> O(n*2^n)
+         * Sum of the max element present in every subsequence :
+         *  Element arr[i] is max element in (2^i) no of subsequences. i-> No of elements < arr[i] in the given input array.
+         *  So,we can approach this problem by sort the given input array.(In sorted array -> left hand side elements are smaller elements of current element)
+         *  If we reverse the sorted array -> Sum of the min element present in every subsequence.
+
