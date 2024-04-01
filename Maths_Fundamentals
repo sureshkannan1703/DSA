@@ -1,0 +1,17 @@
+# Modular Arithmetics :
+  So, while modular arithmetic doesn't directly protect against memory overflow, 
+  it can be a useful tool in managing arithmetic operations to avoid overflow and 
+  ensure that computations stay within expected bounds.
+
+1. Addition 
+    Ex : A=8; B = 6; m =10;
+    (A+B)%m  = 4;
+    (A%m + B%m)%m = 4;
+2. Subtraction : //after individual mod => mod value need to be added with that result. while doing subtraction.
+    Ex : A=14; B = 7; m =4;
+    (A-B)%m  = 3 //; 
+    (A%m - B%m +m)%m = (2-3 +m)%m => -1+4 => 3%4 => 3 //;
+3. Multiplication :
+    Ex : A=8; B=6; m=10;
+    (A * B)%m  = 8;
+    (A%m * B%m)%m = 8;
