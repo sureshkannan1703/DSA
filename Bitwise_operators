@@ -17,3 +17,24 @@
       =>  (a << n) = a * 2^n;
     Right shift operator :
       => (a >> n) = a/2^n;
+3. Check the (i) th bit is set or not in number(N):
+
+    => ((1 << i)& N == 1) => (ith) bit is a set bit : else not a set bit.
+    => (N >> i) & 1 == 1) => (ith) bit is a set bit : else not a set bit.
+
+4. Make the (ith) bit to set if it's not set and vice versa in Number(N):
+    => (N ^ (1 <<i)) 
+
+5. Math property : 
+   => 2^0 + 2^1 + 2^2 +...+2^k = 2^k+1 - 1;
+
+    Ex => 2^0 + 2^1 + 2^2 = 7;
+     Like that,
+         2^3 - 1 = 7;
+6. Negative number representation :
+   a=10; 
+   (-a)  =>  ((~a)-1) => -10;
+   Explanation :
+   in binary number Left most bit considered as negative value to get signed value.
+   0 0 0 0 1 0 1 0  => (~a) => (1 1 1 1 0 1 0 1)+1 => 1 1 1 1 0 1 1 0 => -2^7 + 2^6 + 2^5 + 2^4 + 2^2 + 2^0 => -128+118 = -10;
+   
