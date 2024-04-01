@@ -1,1 +1,19 @@
+1. Bitwise Operators : (&, ^, ~, |, <<, >> )
 
+2. Properties :
+    * A & 1 => 1(if A is odd) : 0(if A is even);
+    Order dont affect the result :
+    * A & B = B & A = true
+    * A | B = B | A = true
+    * A ^ B = B ^ A = true
+    * A & B & C = B & C & A = C & B & A = true
+    So, same for ^, | operators.
+
+    XOR (^) property :
+    * (a ^ b ^ a ^ d ^ b) => d
+      in the list of pair's, it will return one unique pairless element.
+
+    Left shift (<<) property :
+      =>  (a << n) = a * 2^n;
+    Right shift operator :
+      => (a >> n) = a/2^n;
