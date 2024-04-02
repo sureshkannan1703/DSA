@@ -1,4 +1,4 @@
-#Hashing
+# Hashing
 
 1. Sub Array with sum = 0:
     * Calculate Psum array;
@@ -10,4 +10,7 @@
       it means,
               psum[8] = sum[0-2] + sum[3-8];
                 5  =  5 + 0;   So, sub array sum of [3-8] = 5;
+
+2. Identify the first repeating element :
+      * Iterate on arr from last ind -> first index -> update repeating element in global variable.
 
