@@ -19,3 +19,5 @@
       * Carry forward approach - O(N^2);
       * Storing current psum in a variable -> check target values in psums HashMap.(psum-k = target);
       * HashMap + Psum -> O(N) : O(N)
+         * No of subarrays with sum = k -> Using hashMap for stroing how namy pairs possible.
+         * Subarray sum present or not using -> Using Hashset.
