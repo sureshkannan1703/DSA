@@ -14,3 +14,8 @@
 2. Identify the first repeating element :
       * Iterate on arr from last ind -> first index -> update repeating element in global variable.
 
+3. Subarray with sum = k:
+      * Psum approach - O(N^2) : O(N);
+      * Carry forward approach - O(N^2);
+      * Storing current psum in a variable -> check target values in psums HashMap.(psum-k = target);
+      * HashMap + Psum -> O(N) : O(N)
