@@ -6,4 +6,4 @@ As a result, both the original object and the shallow copy share references to t
 Deep Copy:
 In a deep copy, not only is the top-level structure of the object duplicated, but any objects referenced by it are also recursively duplicated.
 This ensures that the copied object and all objects referenced by it are completely independent of the original object and any objects referenced by it.
-java
+Deep copy is often necessary when you need to modify the copied object without affecting the original object, or when dealing with mutable objects and complex object graphs
