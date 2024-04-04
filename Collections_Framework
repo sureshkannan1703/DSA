@@ -38,4 +38,5 @@ Interfaces :
         TreeSet :
             Douplicates not allowd.
             Elemention ordered in a sorted manner.
+            SortedSet<Student> sortedSetByAge = new TreeSet<>(ageComparator);
     
