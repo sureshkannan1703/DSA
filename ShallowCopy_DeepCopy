@@ -1,0 +1,9 @@
+Shallow Copy:
+In a shallow copy, only the top-level structure of the object is duplicated. 
+If the object being copied contains references to other objects(Attribute object of Clone/copied object), those references are copied (not the objects themselves). 
+As a result, both the original object and the shallow copy share references to the same objects.
+
+Deep Copy:
+In a deep copy, not only is the top-level structure of the object duplicated, but any objects referenced by it are also recursively duplicated.
+This ensures that the copied object and all objects referenced by it are completely independent of the original object and any objects referenced by it.
+java
