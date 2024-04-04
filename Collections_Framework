@@ -1,0 +1,37 @@
+Interfaces :
+  List :
+      ArrayList : (When size of the list known in while declaration);
+                  Retrival/Insertion is O(1);
+      LinkedList : (When size of the list not known at declaration); Memory efficient.
+                  Retrival -> O(n);
+                  Insert/Removal -> beginning, end, middle -> O(1);
+                  DoublyLinkedList :
+                          Insertion and retrival can happen on both sides.
+      Vector :
+                Dynamic array like ArrayList.
+                Provides Thread sae synchronized collection.
+      Stack :
+            Last in first out purpose.(LIFO);
+            Synchronized and Thread safe. because it's subclass of Vector class.
+  Queue :
+        Provides FIFO-First In First Out functionality.
+        Implemented by LinkedList.
+        
+        PriorityQueue :
+            Store elements based on its own priority.
+            Default -> Ascending order. 
+            Modified by using explicit comparator.
+       Deque : (Double Ended Queue)
+            Insertion and retrival happens on both side.
+            ArrayDequeue : Perform well than LinkedList implementation.
+            LinkedList : Prefer only More insertion /deletion takes place.
+  Set :
+       HashSet:
+            Douplicates not allowd.
+            there is no insertion order.
+       LinkedHashSet :
+            Douplicates not allowd.
+            Insertion order followed.
+            Time complexity => O(1) on average;
+            Worst case => O(n) if collision occurs on hashing.
+    
