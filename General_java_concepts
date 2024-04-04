@@ -7,3 +7,9 @@ Deep Copy:
 In a deep copy, not only is the top-level structure of the object duplicated, but any objects referenced by it are also recursively duplicated.
 This ensures that the copied object and all objects referenced by it are completely independent of the original object and any objects referenced by it.
 Deep copy is often necessary when you need to modify the copied object without affecting the original object, or when dealing with mutable objects and complex object graphs
+
+Serialization:
+Serialization is the process of converting an object into a stream of bytes, which can be easily stored in a file, transmitted over a network, or saved in a database.
+In Java, the java.io.Serializable interface is used to mark a class as serializable, indicating that its instances can be serialized.
+Deserialization:
+Deserialization is the process of reconstructing an object from its serialized form (i.e., from a stream of bytes).
