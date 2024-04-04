@@ -34,4 +34,8 @@ Interfaces :
             Insertion order followed.
             Time complexity => O(1) on average;
             Worst case => O(n) if collision occurs on hashing.
+    SortedSet ;
+        TreeSet :
+            Douplicates not allowd.
+            Elemention ordered in a sorted manner.
     
