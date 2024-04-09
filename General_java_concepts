@@ -7,13 +7,13 @@ Deep Copy:
 In a deep copy, not only is the top-level structure of the object duplicated, but any objects referenced by it are also recursively duplicated.
 This ensures that the copied object and all objects referenced by it are completely independent of the original object and any objects referenced by it.
 Deep copy is often necessary when you need to modify the copied object without affecting the original object, or when dealing with mutable objects and complex object graphs
-
+-------------------------------------------
 Serialization:
 Serialization is the process of converting an object into a stream of bytes, which can be easily stored in a file, transmitted over a network, or saved in a database.
 In Java, the java.io.Serializable interface is used to mark a class as serializable, indicating that its instances can be serialized.
 Deserialization:
 Deserialization is the process of reconstructing an object from its serialized form (i.e., from a stream of bytes).
-
+---------------------------------------------
 User
 what is shallow copy and deep copy?
 ChatGPT
@@ -32,7 +32,7 @@ It recursively copies all objects referenced by the original object, ensuring th
 Deep copy is more complex and involves recursively copying all fields and objects contained within the original object.
 Deep copy ensures complete independence between the original and the copied object.
 In summary, shallow copy creates a new object with references to the same internal objects as the original, while deep copy creates a new object with copies of all internal objects, ensuring complete independence between the original and the copy. The choice between shallow copy and deep copy depends on the requirements of the application and the desired behavior when duplicating objects.
-
+------------------------------------------
 User:
 While storing password kind of secure content on database, can i prefer to make encrypt it or encode it?
 ChatGPT
@@ -47,10 +47,11 @@ Encoding:
 Encoding is a process of converting data into a format that can be safely transmitted over a network or stored in a text-based format.
 Encoded data is not necessarily secure, as encoding is usually reversible and does not require a secret key.
 Common encoding schemes such as Base64 or hexadecimal are not suitable for storing passwords securely because they can be easily decoded.
-
+---------------------------------------------
 String Immutablity achieved by Final keyword declaration of String class?
 While the final keyword prevents subclassing and method overriding for the String class, it is not the primary reason for its immutability.
 The immutability of the String class is ensured by its design and implementation. Here are some key factors contributing to the immutability of strings in Java:
 
 String Pool: 
 Java maintains a string pool, which is a pool of unique string literals. When you create a string literal using double quotes (" "), Java checks if the string already exists in the pool.
+Yes, the string pool in Java is indeed implemented using hashing concepts, specifically to ensure uniqueness and efficient storage of string literals.
