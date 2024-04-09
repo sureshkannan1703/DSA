@@ -47,3 +47,10 @@ Encoding:
 Encoding is a process of converting data into a format that can be safely transmitted over a network or stored in a text-based format.
 Encoded data is not necessarily secure, as encoding is usually reversible and does not require a secret key.
 Common encoding schemes such as Base64 or hexadecimal are not suitable for storing passwords securely because they can be easily decoded.
+
+String Immutablity achieved by Final keyword declaration of String class?
+While the final keyword prevents subclassing and method overriding for the String class, it is not the primary reason for its immutability.
+The immutability of the String class is ensured by its design and implementation. Here are some key factors contributing to the immutability of strings in Java:
+
+String Pool: 
+Java maintains a string pool, which is a pool of unique string literals. When you create a string literal using double quotes (" "), Java checks if the string already exists in the pool.
