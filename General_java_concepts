@@ -13,3 +13,37 @@ Serialization is the process of converting an object into a stream of bytes, whi
 In Java, the java.io.Serializable interface is used to mark a class as serializable, indicating that its instances can be serialized.
 Deserialization:
 Deserialization is the process of reconstructing an object from its serialized form (i.e., from a stream of bytes).
+
+User
+what is shallow copy and deep copy?
+ChatGPT
+Shallow copy and deep copy are two different mechanisms for duplicating objects in programming:
+
+Shallow Copy:
+
+In a shallow copy, only the top-level structure of the object is duplicated, and the internal references are shared between the original and the copy.
+If the object contains references to other objects, only the references are copied, not the objects themselves.
+Changes made to the internal state of the copied object will affect the original object, and vice versa.
+Shallow copy is typically performed by copying each field of the object to the new object.
+Deep Copy:
+
+In a deep copy, both the top-level structure and all nested objects are duplicated, creating an entirely separate copy of the original object.
+It recursively copies all objects referenced by the original object, ensuring that changes made to the copied object do not affect the original object, and vice versa.
+Deep copy is more complex and involves recursively copying all fields and objects contained within the original object.
+Deep copy ensures complete independence between the original and the copied object.
+In summary, shallow copy creates a new object with references to the same internal objects as the original, while deep copy creates a new object with copies of all internal objects, ensuring complete independence between the original and the copy. The choice between shallow copy and deep copy depends on the requirements of the application and the desired behavior when duplicating objects.
+
+User:
+While storing password kind of secure content on database, can i prefer to make encrypt it or encode it?
+ChatGPT
+When storing sensitive information such as passwords in a database, it is recommended to use encryption rather than encoding. Here's why:
+
+Encryption:
+Encryption is a process of converting data into a ciphertext using an encryption algorithm and a secret key.
+The ciphertext is typically not human-readable and requires a decryption key to convert it back to its original form.
+Encrypting passwords ensures that even if the database is compromised, the passwords remain secure because the attacker would need the decryption key to access the original passwords.
+Common encryption algorithms for password storage include bcrypt, PBKDF2, and Argon2, which are specifically designed for securely hashing passwords.
+Encoding:
+Encoding is a process of converting data into a format that can be safely transmitted over a network or stored in a text-based format.
+Encoded data is not necessarily secure, as encoding is usually reversible and does not require a secret key.
+Common encoding schemes such as Base64 or hexadecimal are not suitable for storing passwords securely because they can be easily decoded.
