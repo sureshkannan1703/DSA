@@ -93,5 +93,22 @@
         getDepth(A.right,currentNodeDepth+1);
    }
 
-        
+9. Node greater than max Ancestor :
+========================================
+    public int solve(TreeNode A) {
+        if(A==null)
+            return 0;
+       return countNodes(A,0);
+    }
+
+    private int countNodes(TreeNode node,int maxAncestor){
+        if(node==null)
+            return 0;
+        int count =0;
+        if(node.val > maxAncestor){
+            count = 1;
+            maxAncestor = node.val;}
+        count  += countNodes(node.left,maxAncestor) + countNodes(node.right,maxAncestor);
+        return count;
+    }
    
