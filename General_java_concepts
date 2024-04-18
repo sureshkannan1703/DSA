@@ -55,3 +55,9 @@ The immutability of the String class is ensured by its design and implementation
 String Pool: 
 Java maintains a string pool, which is a pool of unique string literals. When you create a string literal using double quotes (" "), Java checks if the string already exists in the pool.
 Yes, the string pool in Java is indeed implemented using hashing concepts, specifically to ensure uniqueness and efficient storage of string literals.
+
+Pass by value/ Pass by Reference :
+----------------------------------
+rimitive types are passed by value.
+Object references are also passed by value, meaning a copy of the reference is passed, but modifications to the object's state can be seen outside the method because both the original
+and copied references point to the same object. This can sometimes give the appearance of pass by reference, but it's technically still pass by value.
