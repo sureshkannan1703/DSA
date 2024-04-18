@@ -2,17 +2,19 @@ Interfaces :
   List :
       ArrayList : (When size of the list known in while declaration);
                   Retrival/Insertion is O(1);
+                  Use -> When index based retrival,efficient retrival needed.
       LinkedList : (When size of the list not known at declaration); Memory efficient.
-                  Retrival -> O(n);
-                  Insert/Removal -> beginning, end, middle -> O(1);
+                  Suitable for scenarios where you frequently need to insert or delete elements at the beginning or end of the list.
+                  Provides constant-time insertions and deletions at the head and tail of the list (O(1)), but may have slower 
+                  performance for random access by index (O(n)).
                   DoublyLinkedList :
                           Insertion and retrival can happen on both sides.
       Vector :
                 Dynamic array like ArrayList.
-                Provides Thread sae synchronized collection.
+                Provides Thread safe synchronized collection.
       Stack :
             Last in first out purpose.(LIFO);
-            Synchronized and Thread safe. because it's subclass of Vector class.
+            Synchronized and Thread safe. because it's the subclass of Vector class.
   Queue :
         Provides FIFO-First In First Out functionality.
         Implemented by LinkedList.
